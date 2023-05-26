@@ -4,9 +4,353 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>DEPO</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <svg class="header__logo" width="97" height="24">
+        <use href="img/icons/stack.svg#logo"></use>
+      </svg>
+      <nav class="site-navigation">
+        <button class="site-navigation__close-menu-button" type="button"></button>
+        <ul class="site-navigaion__list">
+          <li class="site-navigaion__item">
+            <a class="site-navigation__link" href="#">О нас</a>
+          </li>
+          <li class="site-navigaion__item">
+            <a class="site-navigation__link" href="#">Как это работает</a>
+          </li>
+          <li class="site-navigaion__item">
+            <a class="site-navigation__link" href="#">Где работаем</a>
+          </li>
+          <li class="site-navigaion__item">
+            <a class="site-navigation__link" href="#">FAQ</a>
+          </li>
+          <li class="site-navigaion__item">
+            <a class="site-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button launch-button" type="button">Launch app</button>
+      <button class="header__open-menu-button"></button>
+    </div>
+  </header>
+  <main class="page">
+    <section class="offer">
+      <div class="container">
+        <h1 class="visually-hidden">Сервис для обмена криптовалюты</h1>
+        <div class="slogan-wrapper">
+          <h2 class="title">Обменивай крипту и фиат без ограничений</h2>
+          <button class="launch-button" type="button">Launch app</button>
+          <span class="description">Работает на смарт-контрактах</span>
+        </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="./img/main-widget@1x.png 1x, ./img/main-widget@2x.png 2x" width="600" height="626">
+          <source type="image/png" media="(min-width: 728px)" srcset="./img/main-widget@1x.png 1x, ./img/main-widget@2x.png 2x" width="452" height="485">
+          <img class="offer__image" src="./img/main-widget@1x.png" srcset="./img/main-widget@2x.png" alt="изображение счета с балансом средств">
+        </picture>
+        <div class="social-info">
+          <span class="social-info__caption">Наши социальные сети</span>
+          <ul class="social-info__list">
+            <li class="social-info__item">
+              <a class="social-info__link" href="">
+                <svg class="social-info__icon" width="16" height="16">
+                  <use href="img/icons/stack.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-info__item">
+              <a class="social-info__link" href="">
+                <svg class="social-info__icon" width="16" height="16">
+                  <use href="img/icons/stack.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-info__item">
+              <a class="social-info__link" href="">
+                <svg class="social-info__icon" width="16" height="16">
+                  <use href="img/icons/stack.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="site-description">
+      <div class="container">
+        <h2 class="caption">Ведущая платформа для торговли цифровыми активами</h2>
+        <p class="description">
+          Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения разнообразных торговых потребностей. 
+          Всесторонняя защита пользовательских активов с нашим автономным хранилищем, многофакторным шифрованием 
+          и круглосуточным мониторингом безопасности.
+        </p>
+      </div>
+    </section>
+    <section class="work-info">
+      <div class="container">
+        <div class="panel">
+          <h2 class="caption">Совершите обмен за 3 шага</h2>
+          <button class="launch-button">Начать обмен</button>
+        </div>
+        <ul class="work-info__list">
+          <li class="work-info__item">
+            <div class="work-info__logo">
+              <svg class="work-info__icon" width="24" height="24">
+                <use href="img/icons/stack.svg#plus"></use>
+              </svg>
+              <svg class="work-info__icon" width="32" height="32">
+                <use href="img/icons/stack.svg#search"></use>
+              </svg>
+            </div>
+            <span class="work-info__anchor">шаг 1</span>
+            <h3 class="little-caption">Создай или найди сделку</h3>
+            <p class="description">Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения </p>
+          </li>
+          <li class="work-info__item">
+            <div class="work-info__logo">
+              <svg class="work-info__icon" width="40" height="40">
+                <use href="img/icons/stack.svg#usdt"></use>
+              </svg>
+              <svg class="work-info__icon" width="84" height="96">
+                <use href="img/icons/stack.svg#shield"></use>
+              </svg>
+              <svg class="work-info__icon" width="40" height="40">
+                <use href="img/icons/stack.svg#dollar"></use>
+              </svg>
+            </div>
+            <span class="work-info__anchor">шаг 2</span>
+            <h3 class="little-caption">Безопасно переведи средства</h3>
+            <p class="description">Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения </p>
+          </li>
+          <li class="work-info__item">
+            <div class="work-info__logo">
+              <svg class="work-info__icon" width="88" height="88">
+                <use href="img/icons/stack.svg#success"></use>
+              </svg>
+            </div>
+            <span class="work-info__anchor">шаг 1</span>
+            <h3 class="little-caption">Заверши обмен</h3>
+            <p class="description">Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map__countries">
+          <ul class="map__countries-list">
+            <li class="map__countries-item">
+              <svg class="map__countries-icon" width="20" height="20">
+                <use href="img/icons/stack.svg#russia"></use>
+              </svg>
+              <span class="map__countries-name map__countries-name--checked">Россия</span>
+            </li>
+            <li class="map__countries-item">
+              <svg class="map__countries-icon" width="20" height="20">
+                <use href="img/icons/stack.svg#ukraine"></use>
+              </svg>
+              <span class="map__countries-name map__countries-name--checked">Украина</span>
+            </li>
+            <li class="map__countries-item">
+              <svg class="map__countries-icon" width="20" height="20">
+                <use href="img/icons/stack.svg#turkey"></use>
+              </svg>
+              <span class="map__countries-name map__countries-name--checked">Турция</span>
+            </li>
+            <li class="map__countries-item">
+              <svg class="map__countries-icon" width="20" height="20">
+                <use href="img/icons/stack.svg#kazakhstan"></use>
+              </svg>
+              <span class="map__countries-name map__countries-name--checked">Казахстан</span>
+            </li>
+            <li class="map__countries-item">
+              <svg class="map__countries-icon" width="20" height="20">
+                <use href="img/icons/stack.svg#belarus"></use>
+              </svg>
+              <span class="map__countries-name map__countries-name--checked">Беларусь</span>
+            </li>
+          </ul>
+          <h2 class="caption">Страны, с которыми уже работает сервис</h2>
+          <div class="wrapper">
+            <button class="launch-button" type="button">Launch app</button>
+            <button class="connect-button">Подключить мою страну</button>
+          </div>
+        </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="img/map@1x.png 1x, img/map@2x.png 2x" width="1000" height="568">
+          <source type="image/png" media="(min-width: 728px)" srcset="img/map@1x.png 1x, img/map@1x.png 2x" width="680" height="383">
+          <img class="map__countries-picture" src="img/map@1x.png" srcset="img/map@2x.png" alt="карта подключенных регионов" width="288" height="166">
+        </picture>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="caption">FAQ</h2>
+          <p class="description">Найдите ответы, на интересующие вопросы</p>
+        </div>
+        <ul class="question__list">
+          <li class="question__item">
+            <h3 class="little-caption">How does staking work?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">Which Proof of Stake asset(s) earn staking rewards?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">Who is eligible to stake on DEPO?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">How does ETH staking work?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">What are the risks associated with staking?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">How do I earn DeFi yield on DEPO?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+          <li class="question__item">
+            <h3 class="little-caption">What’s the difference between staking and DeFi yield?</h3>
+            <p class="description">
+              Staking is a method of verifying and securing transactions on proof of stake blockchains. 
+              It’s faster and more energy efficient than other methods such as proof of work. 
+              Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto,
+               you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, 
+               a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). 
+               The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being 
+               staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner 
+               being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — 
+               this incentivizes them to only approve valid transactions.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="change-info">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="caption">Обменяйте средства за считанные минуты</h2>
+          <p class="description">
+            Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения разнообразных торговых потребностей
+          </p>
+          <button class="launch-button" type="button">Launch app</button>
+        </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="img/phone@1x.png 1x, img/phone@2x.png 2x" width="505" height="597">
+          <source type="image/png" media="(min-width: 728px)" srcset="img/phone@1x.png 1x, img/phone@2x.png 2x" width="456" height="528">
+          <img src="img/phone@1x.png" srcset="img/phone@2x.png" alt="изображение экрана обмена средств" width="282" height="334">
+        </picture>
+      </div>  
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__info-list">
+        <li class="footer__info-item">
+          <span class="desctiption">© DEPO 2022</span>
+        </li>
+        <li class="footer__info-item">
+          <a class="desctiption" href="#">Terms of Use</a>
+          <a class="desctiption" href="#">Privacy policy</a>
+        </li>
+        <li class="footer__info-item">
+          <div class="social-info">
+            <span class="social-info__caption">Наши социальные сети</span>
+            <ul class="social-info__list">
+              <li class="social-info__item">
+                <a class="social-info__link" href="">
+                  <svg class="social-info__icon" width="16" height="16">
+                    <use href="img/icons/stack.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-info__item">
+                <a class="social-info__link" href="">
+                  <svg class="social-info__icon" width="16" height="16">
+                    <use href="img/icons/stack.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-info__item">
+                <a class="social-info__link" href="">
+                  <svg class="social-info__icon" width="16" height="16">
+                    <use href="img/icons/stack.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
