@@ -14,7 +14,7 @@ This website was created for use and change crypto-money between people, as part
 To run this project, install it locally using npm:
 
 ```
-$ cd ../Sedona
+$ cd ../DEPO
 $ npm install
 $ npm start
 ```
